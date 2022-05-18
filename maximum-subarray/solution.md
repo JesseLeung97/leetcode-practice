@@ -1,0 +1,3 @@
+## Maximum Subarray
+
+The maximum sum of the subarray ending at any element `k` is either the maximum sum of the subarray ending at `k - 1` or the maximum sum of the subarray ending at `k-1 + k`.  So, to solve the problem, iterate over the array checking at each element if the maximum sum of the subarray would be increased by adding the element or not.  Then, check if the new maximum sum of the subarray is greater than the previous maximum sum of the subarray.  If so, replace the previous maximum sum with the new maximum sum.  Finally, one all elements have been processed, return the maximum sum.
